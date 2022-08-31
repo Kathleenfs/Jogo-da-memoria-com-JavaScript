@@ -19,6 +19,14 @@ const createElement = (tag,className)=>{
     return element;
 }
 
+const revealCard = ({ target }) =>{
+
+    if(target.parentNode.className.includes('reaveal-card')){
+        return;
+    }
+    target.parentNode.classList.add('reveal-card');
+}
+
 const createCard = (character) =>{
 
     const card = createElement('div', 'card');
@@ -28,6 +36,8 @@ const createCard = (character) =>{
     front.style.backgroundImage = `url('../images/${character}.jpg')`;
     card.appendChild(front);
     card.appendChild(back);
+
+    card.addEventListener('click', revealCard);
 
     return card;
 }
