@@ -1,4 +1,6 @@
 const grid = document.querySelector('.grid');
+const spanPlayer = document.querySelector('.player');
+const timer = document.querySelector('.timer');
 
 const characters= [
     'joel',
@@ -26,7 +28,8 @@ const checkEndGame = ()=>{
     const disabledCards = document.querySelectorAll('.disabled-card');
 
     if(disabledCards.length === 20){
-        alert('Parabens vc ganhou');
+        clearInterval(this.loop)
+        alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`);
     }
 }
 
@@ -87,7 +90,7 @@ const createCard = (character) =>{
     card.appendChild(back);
 
     card.addEventListener('click', revealCard);
-    card.setAttribute('data-character', character)
+    card.setAttribute('data-character', character);
 
     return card;
 }
@@ -100,7 +103,21 @@ const loadGame = () => {
     shuffledArray.forEach((character)=>{
         const card = createCard(character);
         grid.appendChild(card);
-    })
+    });
 }
 
-loadGame();
+const startTimer = () => {
+
+    this.loop = setInterval(() => {
+      const currentTime = +timer.innerHTML; //+ na frente convert string em number
+      timer.innerHTML = currentTime + 1;
+    }, 1000);
+  
+  }
+  
+  window.onload = () => {
+    spanPlayer.innerHTML = localStorage.getItem('player');
+    startTimer();
+    loadGame();
+  }
+
