@@ -3,7 +3,7 @@
 https://kathleenfs.github.io/Jogo-da-memoria-com-JavaScript/
 
 <div align = "center">
-  <img width="600" alt="Projetotudo de bom" src="https://user-images.githubusercontent.com/90014122/184505066-7cf779f3-2bc6-4d85-b28c-d14f88e1edd4.png">
+  <img width="600" alt="Projetotudo de bom" src="https://github.com/Kathleenfs/Jogo-da-memoria-com-JavaScript/issues/1#issue-1360918189">
   <br>
 </div>
 
