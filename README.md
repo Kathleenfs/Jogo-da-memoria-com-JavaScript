@@ -1,15 +1,18 @@
 # Jogo-da-memoria-com-JavaScript
 
-https://kathleenfs.github.io/Jogo-da-memoria-com-JavaScript/
+
+[site no git Pages](https://kathleenfs.github.io/Jogo-da-memoria-com-JavaScript/)
 
 <div align = "center">
   <img alt="Memory Gmae" src="https://user-images.githubusercontent.com/90014122/188282340-581786e4-b596-4e8a-a07a-5bdd357cdd03.png">
   <br>
 </div>
-
+<br>
+A tematica do jogo foi inspirado no filme `Eternal Sunshine of the Spotless Mind`
 
 <h1>Objetivo</h1>
-<p></p>
+<p>Criar um jogo da memoria usando a linguagem de programação JavaScripit</p>
+<p>O jogo da memória é um clássico jogo formado por peças que apresentam uma figura em um dos lados. Cada figura se repete em duas peças diferentes. Para começar o jogo, as peças são postas com as figuras voltadas para baixo, para que não possam ser vistas</p>
 <h2></h2>
 
 <h3></h3>
